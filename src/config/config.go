@@ -7,11 +7,12 @@ import (
 )
 
 type DatabaseConfig struct {
-	Name     string `yaml:"name"`
+	Drive    string `yaml:"drive"`
 	Host     string `yaml:"host"`
 	Port     int    `yaml:"port"`
 	Username string `yaml:"username"`
 	Password string `yaml:"password"`
+	Dbname   string `yaml:"dbname"`
 }
 
 type Config struct {
